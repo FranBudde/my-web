@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-color: rgba(34, 34, 34, 1);
+    --nav-color: rgba(255, 255, 255, 1);
+    --body-color: black;
+    --footer-color: rgba(255, 255, 255, 1);
+}
+
+body{
+    background-color: var(--body-color);
+    color: white;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+    background-color: var(--header-color);
+    color: var(--nav-color);
+}
+
+.nav-ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-ul li {
+    padding-right: 20px;
+}
+
+.text-full-stack{
+            background: linear-gradient(45deg, #FF8660, #9A33FF);
+            background-clip: text;
+            -webkit-background-clip: text; /* Para navegadores WebKit más antiguos */
+            -webkit-text-fill-color: transparent; /* Para asegurar el color del texto transparente en WebKit */
+            font-weight: bold; 
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.artic-experiencia{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.icons{
+    width: 30px;
+    aspect-ratio:13/15;
+}
+
+.skills{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 48%;
+    justify-content: center;
+    background: -o-linear-gradient(#FDFDFD #FFFFFF);
+    
+}
+
+.proyectos article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 391px;
+    height: 302px;
+}
+
+.proyectos article img {
+    height: 70%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+.conteiner-info{
+    background-color: #2A2A2A;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:  10%;
+}
+
+.conteiner-articles{
+    width: 735px;
+    height: 1206px;
+    margin-top: 20px;
+    border-radius: 18px; /* Establecer un radio de 18px para las esquinas */
+    overflow: hidden; /* Asegurar que el contenido dentro de la tarjeta no sobresalga */
+}
+
+
+#title-experiencia {
+    background: -webkit-linear-gradient(#5BADFF, #1373D1); /* Para navegadores WebKit */
+    background: linear-gradient(180deg, #5BADFF, #1373D1); /* Gradiente vertical */
+    -webkit-background-clip: text; /* Para navegadores WebKit más antiguos */
+    -webkit-text-fill-color: transparent; /* Para asegurar el color del texto transparente en WebKit */
+    font-weight: bold;
+}
+
+.artic-experiencia div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.artic-experiencia div img {
+    padding-right: 10px;
+    width: 35px;
+}
+
+.conteiner-articles img {
+    width: 10000px;
+}
+
+footer{
+    background-color: var(--footer-color);
+}
+
+#foto-perfil{
+    margin-top: 15px;
+    max-width: 100%;
+    height: auto;
+    width: 45%;
+    border-radius: 50%;/* Esto asegurará que la altura se ajuste automáticamente para mantener la proporción de la imagen */
+    box-shadow: 0 0 20px white; /* Desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
+}
+
+.conteiner-info-my{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+conteiner-info-my p{
+    gap: 10px;
+    border: 1px solid red;
+}
