@@ -5,15 +5,22 @@
 }
 
 :root{
-    --header-color: rgba(34, 34, 34, 1);
+    --header-color: rgb(179 159 137);
     --nav-color: rgba(255, 255, 255, 1);
-    --body-color: black;
-    --footer-color: rgba(255, 255, 255, 1);
+    --body-color: #cec3ad;
+    --footer-color: rgb(179 159 137);
+    --text-color: black;
+}
+hr{
+    margin-bottom: 15px;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(179 159 137);
 }
 
 body{
     background-color: var(--body-color);
-    color: white;
+    color: var(--text-color);
 }
 
 .header{
@@ -21,9 +28,12 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 35px;
+    height: 82.18px;
     background-color: var(--header-color);
-    color: var(--nav-color);
+    color: var(--text-color);
+}
+.header p{
+    color: white;
 }
 
 .nav-ul{
@@ -47,13 +57,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    margin-bottom: 58px; 
 }
 
 .artic-experiencia{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 .icons{
@@ -62,14 +73,13 @@ body{
 }
 
 .skills{
+    margin-top: 14px;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
     align-content: center;
     width: 48%;
     justify-content: center;
-    background: -o-linear-gradient(#FDFDFD #FFFFFF);
-    
 }
 
 .proyectos article{
@@ -77,6 +87,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 20px black;
     width: 391px;
     height: 302px;
 }
@@ -92,7 +103,7 @@ a{
 }
 
 .conteiner-info{
-    background-color: #2A2A2A;
+    background-color: var(--footer-color);
     width: 100%;
     height: 30%;
     text-align: center;
@@ -109,16 +120,6 @@ a{
     border-radius: 18px; /* Establecer un radio de 18px para las esquinas */
     overflow: hidden; /* Asegurar que el contenido dentro de la tarjeta no sobresalga */
 }
-
-
-#title-experiencia {
-    background: -webkit-linear-gradient(#5BADFF, #1373D1); /* Para navegadores WebKit */
-    background: linear-gradient(180deg, #5BADFF, #1373D1); /* Gradiente vertical */
-    -webkit-background-clip: text; /* Para navegadores WebKit más antiguos */
-    -webkit-text-fill-color: transparent; /* Para asegurar el color del texto transparente en WebKit */
-    font-weight: bold;
-}
-
 .artic-experiencia div {
     display: flex;
     justify-content: flex-start;
@@ -135,6 +136,7 @@ a{
 }
 
 footer{
+    height: 124px;
     background-color: var(--footer-color);
 }
 
@@ -154,7 +156,34 @@ footer{
     align-items: center;
 }
 
-conteiner-info-my p{
-    gap: 10px;
-    border: 1px solid red;
+.conteiner-info-my p{
+    margin-top: 15px;
+    text-align: center;
+}
+
+p{
+    letter-spacing: -0.005625em;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+}
+
+.skills img {
+    filter: drop-shadow(
+        0 0 10px rgba(0,0,0,.8)
+    );
+}
+
+.conteiner-footer{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: -0.005625em;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+}
+.conteiner-footer a{
+    color: var(--text-color);
+}
+
+footer h2 {
+    text-align: center;
 }
