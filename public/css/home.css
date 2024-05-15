@@ -65,6 +65,7 @@ body{
     flex-direction: column;
     margin-bottom: 10px;
     padding-left: 10px;
+    width: 75%;
 }
 
 .icons{
@@ -88,7 +89,7 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px black;
-    width: 391px;
+    width: 297px;
     height: 302px;
 }
 
@@ -136,8 +137,8 @@ a{
 }
 
 footer{
-    height: 124px;
     background-color: var(--footer-color);
+    padding-bottom: 15px;
 }
 
 #foto-perfil{
@@ -152,6 +153,7 @@ footer{
 .conteiner-info-my{
     margin-top: 20px;
     display: flex;
+    width: 75%;
     flex-direction: column;
     align-items: center;
 }
@@ -182,8 +184,25 @@ p{
 }
 .conteiner-footer a{
     color: var(--text-color);
+
 }
 
 footer h2 {
     text-align: center;
+}
+
+.icons-footer{
+    width: 30px;
+    aspect-ratio:1/1;
+    margin-right: 5px;
+}
+
+.contein-icons-footer{
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.artic-experiencia p {
+    padding-bottom: 15px;
 }
